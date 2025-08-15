@@ -1,0 +1,72 @@
+/*color palette*/
+:root {
+--white: #fffefd;
+--light-shade: #F8F4F3; /*snow*/
+--light-accent: #E2A039; /*hyundai yellow*/
+--main-color: #DD5423; /*flame*/
+--dark-accent: #8D9B9D; /*cadet gray*/
+--dark-shade: #323037; /*jet*/
+--black: #1C1B1F; /*raisin black*/
+}
+
+/*typography*/
+h1 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  padding: 0 1rem;
+}
+h2 {
+  font-family: "Give You Glory", cursive;
+  font-weight: 400;
+  padding: 0 1rem;
+}
+p {
+  padding: 0 1rem;
+}
+
+/*elements*/
+.dark-bkg {
+  background-color: var(--dark-shade);
+}
+.container {
+width: 100%;
+text-align: center;
+margin: auto;
+}
+.main-box {
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px -10px #1a1a1a8c;
+  -webkit-box-shadow: 10px 10px 10px -10px #1a1a1a8c;
+  -moz-box-shadow: 5px 5px 20px -10px #1a1a1a8c;
+  color: var(--white);
+  background-color: var(--main-color);
+  text-align: center;
+  margin: 2rem auto;
+  width: 75%;
+}
+.light-accent-box {
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px -10px #1a1a1a8c;
+  -webkit-box-shadow: 10px 10px 10px -10px #1a1a1a8c;
+  -moz-box-shadow: 5px 5px 20px -10px #1a1a1a8c;
+  color: var(--black);
+  background-color: var(--light-accent);
+  text-align: center;
+  margin: 2rem auto;
+  width: 75%;
+
+}
+.dark-accent-box {
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px -10px #1a1a1a8c;
+  -webkit-box-shadow: 10px 10px 10px -10px #1a1a1a8c;
+  -moz-box-shadow: 5px 5px 20px -10px #1a1a1a8c;
+  color: var(--black);
+  background-color: var(--dark-accent);
+  text-align: center;
+  margin: 2rem auto;
+  width: 75%;
+}
