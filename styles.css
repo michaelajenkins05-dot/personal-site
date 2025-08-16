@@ -23,15 +23,35 @@ h2 {
 p {
   padding: 0 1rem;
 }
-
+.white {
+  color: var(--white);
+}
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.give-you-glory-regular {
+  font-family: "Give You Glory", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.inconsolata-font {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.knewave-regular {
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 /*elements*/
 .dark-bkg {
   background-color: var(--dark-shade);
-}
-.container {
-width: 100%;
-text-align: center;
-margin: auto;
 }
 .main-box {
   padding: 2rem;
@@ -69,4 +89,7 @@ margin: auto;
   text-align: center;
   margin: 2rem auto;
   width: 75%;
+}
+.top-logo {
+  padding: .5rem 1rem .25rem 1rem;
 }

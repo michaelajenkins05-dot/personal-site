@@ -1,65 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="" href="./js/bootstrap.min.js">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="" href="./js/bootstrap.min.js">
+<link rel="stylesheet" href="./dashboard.css">
+<link rel="stylesheet" href="./dashboard.js">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Inconsolata:wght@200..900&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <title>lilcrossfaded x nekoweb</title>
+<link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Inconsolata:wght@200..900&family=Knewave&family=Permanent+Marker&display=swap" rel="stylesheet">
+<title>lilcrossfaded x nekoweb</title>
 </head>
 <body style="background-color: var(--dark-shade);">
-<div class="container">
-    <div class="main-box">
-	<h1>test</h1>
-    <h2>let's get into it</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-    purus eros, semper eget pharetra ut, ultricies eu est. Vestibulum a
-    libero luctus, lobortis risus vel, ullamcorper enim. Vestibulum ante
-    ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-    Curabitur sed eros pretium, convallis velit eu, pharetra dui.
-    Sed hendrerit quis metus nec finibus. Quisque iaculis venenatis lacus in efficitur.
-    Duis vel elit felis. Duis eget mattis nisl. Curabitur risus mi,
-    sollicitudin sed orci vitae, tristique tincidunt odio.
-    Praesent nec ultricies odio, quis efficitur eros. Cras eu tortor tellus.
-    </p>
+<header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
+  <div class="top-logo">
+    <h4 class="white knewave-regular">lilcrossfaded</h4>
+  </div>
+</header>
+<div class="container-fluid">
+  <div class="row">
+    <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
+      <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
+          <ul class="nav flex-column">
+            <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#house-fill"></use>
+              </svg>
+              Dashboard </a> </li>
+          </ul>
+         <!-- <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase"> <span>Saved reports</span> <a class="link-secondary" href="#" aria-label="Add a new report">
+            <svg class="bi" aria-hidden="true">
+              <use xlink:href="#plus-circle"></use>
+            </svg>
+            </a> </h6>
+          <ul class="nav flex-column mb-auto">
+            <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="#">
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#file-earmark-text"></use>
+              </svg>
+              Current month </a> </li>
+            <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="#">
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#file-earmark-text"></use>
+              </svg>
+              Last quarter </a> </li>
+            <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="#">
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#file-earmark-text"></use>
+              </svg>
+              Social engagement </a> </li>
+            <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="#">
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#file-earmark-text"></use>
+              </svg>
+              Year-end sale </a> </li>
+          </ul>-->
+          <hr class="my-3">
+         <!-- <ul class="nav flex-column mb-auto">
+            <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="#">
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#gear-wide-connected"></use>
+              </svg>
+              Settings </a> </li>
+            <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="#">
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#door-closed"></use>
+              </svg>
+              Sign out </a> </li>
+          </ul>-->
+        </div>
+      </div>
     </div>
-
-    <div class="light-accent-box">
-	<h1>test</h1>
-    <h2>let's get into it</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-    purus eros, semper eget pharetra ut, ultricies eu est. Vestibulum a
-    libero luctus, lobortis risus vel, ullamcorper enim. Vestibulum ante
-    ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-    Curabitur sed eros pretium, convallis velit eu, pharetra dui.
-    Sed hendrerit quis metus nec finibus. Quisque iaculis venenatis lacus in efficitur.
-    Duis vel elit felis. Duis eget mattis nisl. Curabitur risus mi,
-    sollicitudin sed orci vitae, tristique tincidunt odio.
-    Praesent nec ultricies odio, quis efficitur eros. Cras eu tortor tellus.
-    </p>
-    </div>
-
-    <div class="dark-accent-box">
-	<h1>test</h1>
-    <h2>let's get into it</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-    purus eros, semper eget pharetra ut, ultricies eu est. Vestibulum a
-    libero luctus, lobortis risus vel, ullamcorper enim. Vestibulum ante
-    ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-    Curabitur sed eros pretium, convallis velit eu, pharetra dui.
-    Sed hendrerit quis metus nec finibus. Quisque iaculis venenatis lacus in efficitur.
-    Duis vel elit felis. Duis eget mattis nisl. Curabitur risus mi,
-    sollicitudin sed orci vitae, tristique tincidunt odio.
-    Praesent nec ultricies odio, quis efficitur eros. Cras eu tortor tellus.
-    </p>
-    </div>
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="main-box">
+        <h1>test</h1>
+        <h2>let's get into it</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          purus eros, semper eget pharetra ut, ultricies eu est. Vestibulum a
+          libero luctus, lobortis risus vel, ullamcorper enim. Vestibulum ante
+          ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+          Curabitur sed eros pretium, convallis velit eu, pharetra dui.
+          Sed hendrerit quis metus nec finibus. Quisque iaculis venenatis lacus in efficitur.
+          Duis vel elit felis. Duis eget mattis nisl. Curabitur risus mi,
+          sollicitudin sed orci vitae, tristique tincidunt odio.
+          Praesent nec ultricies odio, quis efficitur eros. Cras eu tortor tellus. </p>
+      </div>
+      <div class="light-accent-box">
+        <h1>test</h1>
+        <h2>let's get into it</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          purus eros, semper eget pharetra ut, ultricies eu est. Vestibulum a
+          libero luctus, lobortis risus vel, ullamcorper enim. Vestibulum ante
+          ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+          Curabitur sed eros pretium, convallis velit eu, pharetra dui.
+          Sed hendrerit quis metus nec finibus. Quisque iaculis venenatis lacus in efficitur.
+          Duis vel elit felis. Duis eget mattis nisl. Curabitur risus mi,
+          sollicitudin sed orci vitae, tristique tincidunt odio.
+          Praesent nec ultricies odio, quis efficitur eros. Cras eu tortor tellus. </p>
+      </div>
+      <div class="dark-accent-box">
+        <h1>test</h1>
+        <h2>let's get into it</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          purus eros, semper eget pharetra ut, ultricies eu est. Vestibulum a
+          libero luctus, lobortis risus vel, ullamcorper enim. Vestibulum ante
+          ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+          Curabitur sed eros pretium, convallis velit eu, pharetra dui.
+          Sed hendrerit quis metus nec finibus. Quisque iaculis venenatis lacus in efficitur.
+          Duis vel elit felis. Duis eget mattis nisl. Curabitur risus mi,
+          sollicitudin sed orci vitae, tristique tincidunt odio.
+          Praesent nec ultricies odio, quis efficitur eros. Cras eu tortor tellus. </p>
+      </div>
+    </main>
+  </div>
 </div>
-
-
 </body>
 </html>
