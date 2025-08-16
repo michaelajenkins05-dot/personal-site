@@ -15,13 +15,17 @@
 <title>lilcrossfaded x nekoweb</title>
 </head>
 <body style="background-color: var(--dark-shade);">
+  
+<!--top header bar-->
 <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
   <div class="top-logo">
     <h4 class="white knewave-regular">lilcrossfaded</h4>
   </div>
 </header>
+<!--dontent under header bar-->
 <div class="container-fluid">
   <div class="row">
+<!--beginning of side bar-->
     <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
       <div class="offcanvas-md offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
         <div class="offcanvas-header">
@@ -79,7 +83,19 @@
         </div>
       </div>
     </div>
+    <!--end-->
+    <!--main part of the page-->
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <!--journel entry-->
+      <div class="container">
+        <h1>E-Journal</h1>
+        <div class="input-area">
+            <textarea id="journalInput" rows="4" placeholder="Write your journal entry..."></textarea>
+            <button id="addEntryButton" class="btn">Add Entry</button>
+        </div>
+        <div id="journalEntries" class="entries-container"></div>
+    </div>
+    <!--end-->
       <div class="main-box">
         <h1>test</h1>
         <h2>let's get into it</h2>
